@@ -1,8 +1,13 @@
 const theme = {
   colors: {
-    bg: '#141518',
-    text: '#f1f4fa',
+    bg: "#141518",
+    text: "#f1f4fa",
+    secondaryText: "#aaaaaa",
   },
-}
+  card: {
+    bg: "rgba(256, 256, 256, 0.03)",
+    hoverBg: "rgba(256, 256, 256, 0.06)",
+  },
+};
 
-export default theme
+export default theme;
