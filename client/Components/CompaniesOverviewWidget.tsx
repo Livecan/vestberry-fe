@@ -10,7 +10,7 @@ const CompaniesOverviewWidget = ({
 }) => {
   return (
     <div>
-      <SectionHeading>Companies Overview</SectionHeading>
+      <SectionHeading>Companies overview</SectionHeading>
       <table
         style={{
           width: "100%",

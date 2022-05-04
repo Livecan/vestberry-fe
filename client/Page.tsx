@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { GET_COMPANIES, CompanyType } from "@client/graphql";
 import CompaniesBySectorWidget from "./Components/CompaniesBySectorWidget";
 import CompaniesOverviewWidget from "./Components/CompaniesOverviewWidget";
+import CompaniesByInvestmentSize from "./Components/CompaniesByInvestmentSize";
 
 const Container = styled.div`
   max-width: 1000px;
@@ -35,6 +36,7 @@ export function Page() {
   return (
     <Container>
       <CompaniesBySectorWidget companies={companies} />
+      <CompaniesByInvestmentSize companies={companies} />
       <CompaniesOverviewWidget companies={companies} />
     </Container>
   );

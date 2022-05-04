@@ -1,17 +1,13 @@
 import { CompanyType } from "@client/graphql";
 import React, { useMemo } from "react";
 import styled from "styled-components";
-import { SectionHeading } from "./StyledComponents";
+import { Card, SectionHeading } from "./StyledComponents";
 
-const SectorCard = styled.div`
-  background-color: ${(props) => props.theme.card.bg};
+const SectorCard = styled(Card)`
   &:hover {
     background-color: ${(props) => props.theme.card.hoverBg};
     cursor: pointer;
   }
-  border-radius: 10px;
-  overflow: auto;
-  position: relative;
   width: 235px;
   margin-right: 15px;
   height: 140px;
