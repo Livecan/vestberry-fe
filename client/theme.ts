@@ -8,6 +8,9 @@ const theme = {
     bg: "rgba(256, 256, 256, 0.03)",
     hoverBg: "rgba(256, 256, 256, 0.06)",
   },
+  button: {
+    bg: "#06AC72",
+  }
 };
 
 export default theme;

@@ -1,12 +1,19 @@
-import {ApolloProvider} from '@apollo/client'
-import styled, {createGlobalStyle, ThemeProvider} from 'styled-components'
-import theme from '@client/theme'
-import {ReactComponent as LogoSvg} from '@assets/vestberry-logo.svg'
+import { ApolloProvider } from "@apollo/client";
+import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
+import theme from "@client/theme";
+import { ReactComponent as LogoSvg } from "@assets/vestberry-logo.svg";
 
-import client from '@client/apollo'
-import Page from '@client/Page'
+import client from "@client/apollo";
+import Page from "@client/Page";
 
 const GlobalStyles = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+  }
+  input,select {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: ${theme.colors.text};
+  }
   body {
     margin: 0;
     padding: 0;
@@ -17,15 +24,15 @@ const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-`
+`;
 
 const Logo = styled(LogoSvg)`
   height: 10px;
-`
+`;
 
 const Header = styled.header`
   padding: 20px;
-`
+`;
 
 function App() {
   return (
@@ -40,7 +47,7 @@ function App() {
         </ThemeProvider>
       </ApolloProvider>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

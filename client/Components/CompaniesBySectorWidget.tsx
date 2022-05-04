@@ -49,7 +49,7 @@ const CompaniesBySectorWidget = ({
       }
     }
     return Array.from(companiesBySector);
-  }, companies);
+  }, [companies]);
 
   return (
     <div>

@@ -1,5 +1,12 @@
 import { CompanyType } from "@client/graphql";
-import { SectionHeading, Td, Th, Tr, TrHeader } from "./StyledComponents";
+import {
+  Normal,
+  SectionHeading,
+  Td,
+  Th,
+  Tr,
+  TrHeader,
+} from "./StyledComponents";
 
 const numberFormat = new Intl.NumberFormat("sk-SK", { useGrouping: true });
 
@@ -22,10 +29,18 @@ const CompaniesOverviewWidget = ({
       >
         <thead>
           <TrHeader>
-            <Th>company name</Th>
-            <Th>stage</Th>
-            <Th>sector</Th>
-            <Th>investment size</Th>
+            <Th>
+              <Normal>Company name</Normal>
+            </Th>
+            <Th>
+              <Normal>stage</Normal>
+            </Th>
+            <Th>
+              <Normal>sector</Normal>
+            </Th>
+            <Th>
+              <Normal>investment size</Normal>
+            </Th>
           </TrHeader>
         </thead>
         <tbody>
